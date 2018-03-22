@@ -15,7 +15,7 @@
  *= require_self
  */
 
-.results_block {
+#results {
   display: inline-block;
 }
 
