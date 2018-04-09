@@ -10,7 +10,7 @@
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
           <li><%= link_to "My portfolio", my_portfolio_path  %></li>
-          <li><%= link_to "My profile", edit_registration_path(current_user) %></li>
+          <li><%= link_to "My friends", my_friends_path %></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
@@ -19,6 +19,7 @@
               <i class="fa fa-user"></i> <%= current_user.full_name %> <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
+              <li><%= link_to "My profile", edit_registration_path(current_user) %></li>
               <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
             </ul>
           </li>
